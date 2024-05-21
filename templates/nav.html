@@ -1,0 +1,16 @@
+<nav class="dropdownmenu">
+    <ul>
+      <li><a href="/">HOME</a></li>>
+      {% if user.is_authenticated %}
+        <li><a href="quartos">Quartos</a>
+          <ul id="submenu">
+            <li><a href="reservas">Reservar quarto</a></li>
+          </ul>
+        </li>
+        <li><a href="logout">Logout</a></li>
+      {% endif %}
+      <li><a href="login">Login</a></li>
+      
+
+    </ul>
+  </nav>

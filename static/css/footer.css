@@ -1,0 +1,35 @@
+.rodape {
+    margin-top: 10%;
+    background-color: gray;
+    color: white;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.rodape p {
+    margin: 0;
+    margin-top: 20px;
+}
+
+.contato p {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.contato {
+    display: flex; /* Alterado para flex para colocar os elementos lado a lado */
+    align-items: center; /* Centralize verticalmente */
+    justify-content: center; /* Centralize horizontalmente */
+}
+
+.img-google-map {
+    margin-top: 30px;
+    width: 300px; /* Largura ajustada do mapa */
+    height: 300px; /* Altura ajustada do mapa */
+    margin-left: 20px; /* Adiciona um espaço entre o mapa e o texto */
+}

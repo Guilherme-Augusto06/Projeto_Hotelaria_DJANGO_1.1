@@ -1,0 +1,56 @@
+.dropdownmenu {
+    margin: 0;
+    padding: 0;
+    background: gray;
+    list-style: none;
+    width: 100%;
+}
+
+.dropdownmenu li {
+    display: inline-block; /* Alterado de float: left para display: inline-block */
+    position: relative;
+}
+
+.dropdownmenu a {
+    display: block;
+    padding: 20px 30px; /* Reduzi o padding para evitar que a largura ultrapasse a tela */
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.25s ease;
+}
+
+.dropdownmenu li:hover a {
+    background: #000000;
+}
+
+#submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: gray; /* Adicionado para que o submenu tenha o mesmo background da navbar */
+    transition: opacity 0.25s ease;
+}
+
+.dropdownmenu li:hover #submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+#submenu li {
+    display: block;
+    width: 100%;
+}
+
+#submenu a {
+    padding: 10px 20px; /* Reduzi o padding para evitar que a largura ultrapasse a tela */
+    background: #000000;
+    color: #FFFFFF;
+}
+
+#submenu a:hover {
+    background: #DF4B05;
+}
