@@ -1,0 +1,67 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block nav %}
+    {% include "nav.html" %}
+{% endblock %}
+
+{% block body %}
+    {% for item in dados_hotel %}
+    <div id="parallax-world-of-ugg">
+  
+        <section>
+          <div class="title">
+            
+            <h1>{{item.titulo}}</h1>
+          </div>
+        </section>
+            
+        <section>
+            <div class="parallax-one">
+              <h2>Elegância Tecnológica</h2>
+            </div>
+        </section>
+        
+        <section>
+          <div class="block">
+
+            <p><span class="first-character sc">N</span>{{item.descricao}}</p>
+            <p class="line-break margin-top-10"></p>
+  
+          </div>
+        </section>
+        
+        <section>
+          <div class="parallax-two">
+            <h2>Hospitalidade Personalizada</h2>
+          </div>
+        </section>
+        
+        <section>
+          <div class="block">
+
+            <p><span class="first-character ny">H</span>{{item.descricao2}}</p>
+            <p class="line-break margin-top-10"></p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="parallax-three">
+            <h2>Centro de Inovação e Aprendizado</h2>
+            <p class="line-break margin-top-10"></p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="block">
+            <p><span class="first-character atw">A</span>{{item.descricao3}}</p>
+            <p class="line-break margin-top-10"></p>
+           
+          </div>
+        </section>
+          
+        </div>
+    {% endfor %}
+{% endblock %}
+
+

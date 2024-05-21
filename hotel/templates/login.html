@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% load static %}
+
+
+{% block body %}
+<!-- multistep form -->
+<div id="msform">
+
+    <!-- fieldsets -->
+    <fieldset>
+        <h2 class="fs-title">Faça seu login!
+        </h2>
+        <h3 class="fs-subtitle">Insira seus dados</h3>
+        <form action="login" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <br></br>
+            <p>Caso não tenha cadastrado ainda <a href="cadastro_usuario">cadastro</a></p>
+            <input type="submit" value="Submit">
+            
+        </form> 
+    </fieldset>
+</div>
+
+{% endblock %}

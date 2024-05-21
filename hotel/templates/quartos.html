@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block body %}
+<div class="compras">
+    <!-- Seu conteúdo aqui -->
+    {% for item in dados_quarto %}
+    <div class="compra" style="background-image: url('{{item.foto_quarto.url}}');">
+        <div class="fundoTexto">
+            <h1 style="color: WHITE;">{{item.tipo}}</h1>
+        </div>
+    </div>
+    
+    {% endfor %}
+</div>
+
+<script>
+    document.getElementById('btnAgendar').addEventListener('click', function() {
+        window.location.href = 'reservas';
+    });
+
+</script>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% load static %}
+
+
+{% block body %}
+<!-- multistep form -->
+<div id="msform">
+
+    <!-- fieldsets -->
+    <fieldset>
+        <h2 class="fs-title">Faça seu agendamento</h2>
+        <h3 class="fs-subtitle">Insira seus dados</h3>
+        <form action="reservas" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <br></br>
+            <input type="submit" value="Submit">
+            
+        </form> 
+    </fieldset>
+</div>
+
+{% endblock %}
